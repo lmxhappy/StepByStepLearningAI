@@ -1,4 +1,4 @@
-# StepByStepLearningAI
+# Step By Step Learning AI
 
 欢迎来到 **StepByStepLearningAI** 仓库！这个仓库是微信公众号“稳扎稳打学AI”的配套资源库，旨在帮助大家逐步、系统地学习人工智能，特别是推荐算法领域。我们每天精挑细选最优质、最新鲜的推荐算法论文，陪你一起保持进步、不断精进。
 
@@ -28,16 +28,24 @@
 
 - **[跨域](https://github.com/lmxhappy/StepByStepLearningAI/tree/main/CrossDomainRecommendation)**
   跨领域推荐。
+  - [MTFM](./cross-domain-recommendation/MTFM.md)
 
 - **[用户行为序列建模](https://github.com/lmxhappy/StepByStepLearningAI/tree/main/BehaviorSequenceModeling)**
   用户的历史行为序列建模，包括超长序列建模和普通序列建模。
+  - [STCA](./behavior-sequence-modeling/ultra-long-behavior-sequence-modeling/stca.md)
+  - [Ultra-HSTU](./behavior-sequence-modeling/ultra-long-behavior-sequence-modeling/Ultra-HSTU.md)
+
 
 - **[生成式推荐](https://github.com/lmxhappy/StepByStepLearningAI/tree/main/GR)**
   生成式推荐。
+  - [OneLive](./generative-recommendation/OneLive.md)
+  - [Sigma](./generative-recommendation/Sigma.md)
+  - [VectorizingTrie](./generative-recommendation/VectorizingTrie.md)
 
 - **[SID](https://github.com/lmxhappy/StepByStepLearningAI/tree/main/SID)**
   神经网络基础、CNN、RNN、Transformer 等深度学习模型与实践。
-
+- **[特征交叉]()**
+  - [MGDIN](./feature-cross/MGDIN.md)
 
 ## 联系方式
 - 作者：刘明星
