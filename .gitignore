@@ -1,3 +1,7 @@
 .idea
 template.md
 .DS_Store
+*.swp
+*.swo
+*~
+.vscode/
