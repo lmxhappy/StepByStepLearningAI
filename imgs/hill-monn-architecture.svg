@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" font-family="Arial, 'PingFang SC', sans-serif">
+
+  <!-- Background -->
+  <rect width="960" height="720" fill="#f8f9fa" rx="12"/>
+
+  <!-- Title -->
+  <text x="480" y="40" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">MoNN Architecture with HILL Hierarchical Index</text>
+  <text x="480" y="62" text-anchor="middle" font-size="13" fill="#555">Meta Foundation Retrieval Model (HILL, arXiv 2604.12965)</text>
+
+  <!-- ==================== HILL Index Tree (top) ==================== -->
+  <rect x="60" y="88" width="840" height="200" rx="10" fill="#e8f4fd" stroke="#2196F3" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="90" y="110" font-size="13" font-weight="bold" fill="#1565C0">HILL: Hierarchical Index Learning</text>
+  <text x="90" y="128" font-size="11" fill="#1976D2">Jointly learned with MoNN via cross-attention + residual quantization</text>
+
+  <!-- Tree: Root -->
+  <ellipse cx="480" cy="158" rx="38" ry="22" fill="#1565C0" stroke="#0d47a1" stroke-width="2"/>
+  <text x="480" y="163" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Root</text>
+
+  <!-- Tree: Level 1 nodes -->
+  <ellipse cx="280" cy="222" rx="38" ry="22" fill="#1976D2" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="280" y="227" text-anchor="middle" font-size="10" fill="white">Node L1</text>
+  <ellipse cx="480" cy="222" rx="38" ry="22" fill="#1976D2" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="480" y="227" text-anchor="middle" font-size="10" fill="white">Node L1</text>
+  <ellipse cx="680" cy="222" rx="38" ry="22" fill="#1976D2" stroke="#1565C0" stroke-width="1.5"/>
+  <text x="680" y="227" text-anchor="middle" font-size="10" fill="white">Node L1</text>
+
+  <!-- Tree: Level 2 nodes (leaves) -->
+  <ellipse cx="170" cy="272" rx="30" ry="18" fill="#42A5F5" stroke="#1976D2" stroke-width="1"/>
+  <text x="170" y="276" text-anchor="middle" font-size="9" fill="white">L2</text>
+  <ellipse cx="280" cy="272" rx="30" ry="18" fill="#42A5F5" stroke="#1976D2" stroke-width="1"/>
+  <text x="280" y="276" text-anchor="middle" font-size="9" fill="white">L2</text>
+  <ellipse cx="400" cy="272" rx="30" ry="18" fill="#42A5F5" stroke="#1976D2" stroke-width="1"/>
+  <text x="400" y="276" text-anchor="middle" font-size="9" fill="white">L2</text>
+  <ellipse cx="560" cy="272" rx="30" ry="18" fill="#42A5F5" stroke="#1976D2" stroke-width="1"/>
+  <text x="560" y="276" text-anchor="middle" font-size="9" fill="white">L2</text>
+  <ellipse cx="660" cy="272" rx="30" ry="18" fill="#42A5F5" stroke="#1976D2" stroke-width="1"/>
+  <text x="660" y="276" text-anchor="middle" font-size="9" fill="white">L2</text>
+  <ellipse cx="780" cy="272" rx="30" ry="18" fill="#42A5F5" stroke="#1976D2" stroke-width="1"/>
+  <text x="780" y="276" text-anchor="middle" font-size="9" fill="white">L2</text>
+
+  <!-- Tree edges: root to L1 -->
+  <line x1="480" y1="180" x2="280" y2="200" stroke="#1565C0" stroke-width="1.5"/>
+  <line x1="480" y1="180" x2="480" y2="200" stroke="#1565C0" stroke-width="1.5"/>
+  <line x1="480" y1="180" x2="680" y2="200" stroke="#1565C0" stroke-width="1.5"/>
+
+  <!-- Tree edges: L1 to L2 -->
+  <line x1="280" y1="244" x2="170" y2="254" stroke="#1976D2" stroke-width="1.2"/>
+  <line x1="280" y1="244" x2="280" y2="254" stroke="#1976D2" stroke-width="1.2"/>
+  <line x1="480" y1="244" x2="400" y2="254" stroke="#1976D2" stroke-width="1.2"/>
+  <line x1="480" y1="244" x2="560" y2="254" stroke="#1976D2" stroke-width="1.2"/>
+  <line x1="680" y1="244" x2="660" y2="254" stroke="#1976D2" stroke-width="1.2"/>
+  <line x1="680" y1="244" x2="780" y2="254" stroke="#1976D2" stroke-width="1.2"/>
+
+  <!-- Residual Quantization label -->
+  <text x="870" y="200" text-anchor="middle" font-size="10" fill="#1565C0" font-style="italic">Residual</text>
+  <text x="870" y="214" text-anchor="middle" font-size="10" fill="#1565C0" font-style="italic">Quantization</text>
+  <text x="870" y="228" text-anchor="middle" font-size="10" fill="#1565C0" font-style="italic">Layer by Layer</text>
+
+  <!-- Arrow from MoNN to HILL -->
+  <line x1="480" y1="460" x2="480" y2="295" stroke="#FF6F00" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <polygon points="480,290 474,302 486,302" fill="#FF6F00"/>
+  <text x="510" y="390" font-size="11" fill="#FF6F00" font-weight="bold">embeddings</text>
+  <text x="510" y="404" font-size="11" fill="#FF6F00" font-weight="bold">→ index</text>
+
+  <!-- ==================== OverArch ==================== -->
+  <rect x="320" y="468" width="320" height="56" rx="8" fill="#4a148c" stroke="#6a1b9a" stroke-width="2"/>
+  <text x="480" y="492" text-anchor="middle" font-size="13" font-weight="bold" fill="white">OverArch</text>
+  <text x="480" y="512" text-anchor="middle" font-size="11" fill="#e1bee7">DHEN / DeepFM / Wukong</text>
+  <!-- Output score arrow -->
+  <line x1="640" y1="496" x2="730" y2="496" stroke="#4a148c" stroke-width="2"/>
+  <polygon points="730,496 718,490 718,502" fill="#4a148c"/>
+  <text x="760" y="492" font-size="12" fill="#4a148c" font-weight="bold">Score</text>
+  <text x="760" y="508" font-size="11" fill="#4a148c">(CTR / CVR)</text>
+
+  <!-- OverArch input arrows -->
+  <line x1="240" y1="560" x2="380" y2="524" stroke="#888" stroke-width="1.5"/>
+  <polygon points="380,524 369,522 373,533" fill="#888"/>
+  <line x1="480" y1="560" x2="480" y2="524" stroke="#888" stroke-width="1.5"/>
+  <polygon points="480,524 474,536 486,536" fill="#888"/>
+  <line x1="720" y1="560" x2="580" y2="524" stroke="#888" stroke-width="1.5"/>
+  <polygon points="580,524 579,535 590,531" fill="#888"/>
+
+  <!-- ==================== Three Towers ==================== -->
+
+  <!-- User Tower -->
+  <rect x="80" y="560" width="320" height="100" rx="8" fill="#1b5e20" stroke="#2e7d32" stroke-width="2"/>
+  <text x="240" y="582" text-anchor="middle" font-size="13" font-weight="bold" fill="white">User Tower</text>
+  <rect x="100" y="592" width="130" height="28" rx="5" fill="#388E3C"/>
+  <text x="165" y="611" text-anchor="middle" font-size="10" fill="white">Dense Features</text>
+  <rect x="248" y="592" width="130" height="28" rx="5" fill="#388E3C"/>
+  <text x="313" y="611" text-anchor="middle" font-size="10" fill="white">Sparse Features</text>
+  <text x="240" y="648" text-anchor="middle" font-size="11" fill="#a5d6a7">→ User Embedding</text>
+
+  <!-- Interaction Tower -->
+  <rect x="420" y="560" width="120" height="100" rx="8" fill="#b71c1c" stroke="#c62828" stroke-width="2"/>
+  <text x="480" y="582" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Interaction</text>
+  <text x="480" y="598" text-anchor="middle" font-size="12" font-weight="bold" fill="white">Tower</text>
+  <rect x="432" y="608" width="96" height="24" rx="4" fill="#e53935"/>
+  <text x="480" y="624" text-anchor="middle" font-size="9" fill="white">I2IF (Inv. Index)</text>
+  <text x="480" y="648" text-anchor="middle" font-size="9" fill="#ffcdd2">cross features</text>
+
+  <!-- Item Tower -->
+  <rect x="560" y="560" width="320" height="100" rx="8" fill="#0d47a1" stroke="#1565C0" stroke-width="2"/>
+  <text x="720" y="582" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Item Tower</text>
+  <rect x="580" y="592" width="130" height="28" rx="5" fill="#1976D2"/>
+  <text x="645" y="611" text-anchor="middle" font-size="10" fill="white">Dense Features</text>
+  <rect x="728" y="592" width="130" height="28" rx="5" fill="#1976D2"/>
+  <text x="793" y="611" text-anchor="middle" font-size="10" fill="white">Sparse Features</text>
+  <text x="720" y="648" text-anchor="middle" font-size="11" fill="#bbdefb">→ Item Embedding</text>
+
+  <!-- ==================== Input Layer ==================== -->
+  <rect x="80" y="682" width="320" height="28" rx="6" fill="#37474f" stroke="#546e7a" stroke-width="1.5"/>
+  <text x="240" y="700" text-anchor="middle" font-size="11" fill="#eceff1">User Features (clicks, views, ...)</text>
+
+  <rect x="420" y="682" width="120" height="28" rx="6" fill="#37474f" stroke="#546e7a" stroke-width="1.5"/>
+  <text x="480" y="700" text-anchor="middle" font-size="11" fill="#eceff1">&lt;U, I&gt; pair</text>
+
+  <rect x="560" y="682" width="320" height="28" rx="6" fill="#37474f" stroke="#546e7a" stroke-width="1.5"/>
+  <text x="720" y="700" text-anchor="middle" font-size="11" fill="#eceff1">Item Features (id, category, ...)</text>
+
+  <!-- Input arrows -->
+  <line x1="240" y1="682" x2="240" y2="660" stroke="#546e7a" stroke-width="1.5"/>
+  <polygon points="240,660 234,672 246,672" fill="#546e7a"/>
+  <line x1="480" y1="682" x2="480" y2="660" stroke="#546e7a" stroke-width="1.5"/>
+  <polygon points="480,660 474,672 486,672" fill="#546e7a"/>
+  <line x1="720" y1="682" x2="720" y2="660" stroke="#546e7a" stroke-width="1.5"/>
+  <polygon points="720,660 714,672 726,672" fill="#546e7a"/>
+
+  <!-- ==================== TTT annotation ==================== -->
+  <rect x="62" y="310" width="190" height="52" rx="6" fill="#fff8e1" stroke="#FFA000" stroke-width="1.5"/>
+  <text x="157" y="330" text-anchor="middle" font-size="11" font-weight="bold" fill="#E65100">Test-Time Training</text>
+  <text x="157" y="346" text-anchor="middle" font-size="10" fill="#BF360C">Mid-level nodes = </text>
+  <text x="157" y="360" text-anchor="middle" font-size="10" fill="#BF360C">high-quality fine-tune data</text>
+
+  <!-- Arrow from mid-node to TTT box -->
+  <line x1="170" y1="290" x2="157" y2="310" stroke="#FFA000" stroke-width="1.5" stroke-dasharray="4,2"/>
+
+  <!-- ==================== EM Approx annotation ==================== -->
+  <rect x="708" y="310" width="190" height="52" rx="6" fill="#f3e5f5" stroke="#7B1FA2" stroke-width="1.5"/>
+  <text x="803" y="330" text-anchor="middle" font-size="11" font-weight="bold" fill="#4A148C">EM Approximation</text>
+  <text x="803" y="346" text-anchor="middle" font-size="10" fill="#6A1B9A">E: FAISS K-Means</text>
+  <text x="803" y="360" text-anchor="middle" font-size="10" fill="#6A1B9A">M: Train MoNN</text>
+
+  <!-- ==================== Stacked MoNN annotation ==================== -->
+  <rect x="62" y="430" width="220" height="32" rx="6" fill="#e8f5e9" stroke="#388E3C" stroke-width="1.5"/>
+  <text x="172" y="444" text-anchor="middle" font-size="10" fill="#1B5E20" font-weight="bold">Stacked Deploy:</text>
+  <text x="172" y="458" text-anchor="middle" font-size="10" fill="#2E7D32">Large (coarse) → Small (fine)</text>
+
+  <!-- Legend -->
+  <rect x="62" y="370" width="12" height="12" fill="#1565C0" rx="2"/>
+  <text x="82" y="381" font-size="10" fill="#333">Index Node</text>
+  <rect x="62" y="390" width="12" height="12" fill="#FF6F00" rx="2"/>
+  <text x="82" y="401" font-size="10" fill="#333">Embedding Flow</text>
+
+</svg>

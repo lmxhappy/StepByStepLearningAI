@@ -29,6 +29,7 @@
 - **[跨域](https://github.com/lmxhappy/StepByStepLearningAI/tree/main/CrossDomainRecommendation)**
   跨领域推荐。
   - [MTFM](./cross-domain-recommendation/MTFM.md)
+  - [YouTube Music跨域知识蒸馏](./cross-domain-recommendation/youtube-music-cross-domain.md)
 
 - **[用户行为序列建模](https://github.com/lmxhappy/StepByStepLearningAI/tree/main/BehaviorSequenceModeling)**
   用户的历史行为序列建模，包括超长序列建模和普通序列建模。
@@ -40,12 +41,26 @@
   生成式推荐。
   - [OneLive](./generative-recommendation/OneLive.md)
   - [Sigma](./generative-recommendation/Sigma.md)
-  - [VectorizingTrie](./generative-recommendation/VectorizingTrie.md)
+  - [VectorizingTrie](./generative-recommendation/static.md)
+  - [GEM-Rec](./generative-recommendation/gem-rec.md)
+  - [RCLRec](./generative-recommendation/rclrec.md)
 
 - **[SID](https://github.com/lmxhappy/StepByStepLearningAI/tree/main/SID)**
-  神经网络基础、CNN、RNN、Transformer 等深度学习模型与实践。
+  语义ID学习与生成式检索。
+  - [QuaSID](./sid/QuaSID.md)
+  - [DGI](./sid/DGI.md)
+
 - **[特征交叉]()**
   - [MGDIN](./feature-cross/MGDIN.md)
+  - [EST](./feature-cross/est.md)
+
+- **[I2I推荐]()**
+  I2I（Item-to-Item）推荐。
+  - [DAIAN](./item-to-item/daian.md)
+
+- **[大规模召回]()**
+  工业级大规模召回与高效检索。
+  - [HILL](./hill.md)
 
 ## 联系方式
 - 作者：刘明星
