@@ -35,6 +35,7 @@
   用户的历史行为序列建模，包括超长序列建模和普通序列建模。
   - [STCA](./behavior-sequence-modeling/ultra-long-behavior-sequence-modeling/stca.md)
   - [Ultra-HSTU](./behavior-sequence-modeling/ultra-long-behavior-sequence-modeling/Ultra-HSTU.md)
+  - [MoS](./behavior-sequence-modeling/mos.md)
 
 
 - **[生成式推荐](https://github.com/lmxhappy/StepByStepLearningAI/tree/main/GR)**
