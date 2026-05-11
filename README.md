@@ -63,6 +63,10 @@
   工业级大规模召回与高效检索。
   - [HILL](./hill.md)
 
+- **[双塔召回](https://github.com/lmxhappy/StepByStepLearningAI/tree/main/deep-retrieval)**
+  两塔架构的深度召回。
+  - [CS3](./deep-retrieval/cs3.md)
+
 - **[ML Infra]()**
   机器学习基础设施 / 特征运维 / 模型部署等工程系统类论文。
   - [IEFF](./ml-infra/IEFF.md)
