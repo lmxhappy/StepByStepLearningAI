@@ -70,6 +70,7 @@
 - **[ML Infra]()**
   机器学习基础设施 / 特征运维 / 模型部署等工程系统类论文。
   - [IEFF](./ml-infra/IEFF.md)
+  - [Versioned Late Materialization](./ml-infra/paper_2604.24806.md)
 
 ## 联系方式
 - 作者：刘明星
